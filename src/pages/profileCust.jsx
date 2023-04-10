@@ -9,29 +9,31 @@ class ProfileCust extends Component {
       <>
         <section className="bg-[#F9F9F9] handphone:w-[100vw]">
           <div className="grid justify-items-center justify-center ">
-            <p className="text-3xl font-normal pt-[30px] pb-[20px]">Profile</p>
-            <p className="pb-[60px]">See your notifications for the latest updates</p>
+            <p className="text-title font-normal pt-[30px] pb-[20px]
+            handphone:max-tablet:text-mid handphone:max-tablet:pb-[10px]">Profile</p>
+            <p className="pb-[60px]
+            handphone:max-tablet:text-medium handphone:max-tablet:pb-[30px]">See your notifications for the latest updates</p>
           </div>
         </section>
-        <section className="flex px-[150px] py-[100px] gap-10
-        handphone: px-[5vw] pt-[5vw] pb-[10vw] flex flex-start gap-3">
-          <div className="
-          handphone: w-[50px]">
-            <img src={Cust} alt="" />
+        <section className="flex px-[10vw] py-[100px] gap-10
+        handphone:max-tablet:pl-wFormProfile 
+        handphone:max-tablet:pr-wFormProfile pt-[5vw] pb-[10vw] flex flex-start gap-3">
+          <div className="w-max">
+            <img src={Cust} alt="" className="w-ProfileImage handphone:max-tablet:w-50"/>
           </div>
-          <div className="flex flex-wrap w-[100px] h-[50px] gap-2 items-center pt-[15px]
-          handphone: pt-[0px] gap-0">
-            <p className="font-bold text-2xl
-            handphone: text-base pr-[1vw]">Syifa</p>
-            <img src={Edit2} alt="" className="w-[25px]
-            handphone: w-[10px]"/>
-            <p className="items-start">as Customer</p>
+          <div className="flex flex-wrap w-[150px] gap-2 items-center
+          handphone:max-tablet:pt-[0px] gap-0 handphone:max-tablet:w-textimage">
+            <p className="font-bold text-title pr-[0]
+            handphone:max-tablet:font-titleWeight handphone:max-tablet:text-medium pr-[1vw]">Syifa</p>
+            <img src={Edit2} alt="" className="w-image2
+            handphone:max-tablet:w-image"/>
+            <p className="items-start handphone:max-tablet:text-small">as Customer</p>
           </div>
         </section>
         <section className="grid mx-[150px] border-2 mb-[100px]
-        handphone: mx-[5vw] mb-[5vh]">
+        handphone:max-tablet:mx-[5vw] handphone:max-tablet:mb-[2vh]">
           <div className="flex px-[50px] py-[50px] border-b-2
-          handphone:px-[5vw] py-[2vh]">
+          handphone:max-tablet:px-wFormProfile handphone:max-tablet:py-hFormProfile">
             <form className="grow">
               <label>Gender</label>
               <br></br>
@@ -43,7 +45,7 @@ class ProfileCust extends Component {
             </div>
           </div>
           <div className="flex px-[50px] py-[50px] border-b-2
-          handphone:px-[5vw] py-[2vh]">
+          handphone:max-tablet:px-wFormProfile handphone:max-tablet:py-hFormProfile">
           <form className="grow">
               <label>Your Email</label>
               <br></br>
@@ -55,7 +57,7 @@ class ProfileCust extends Component {
             </div>
             </div>
           <div className="flex px-[50px] py-[50px]
-          handphone:px-[5vw] py-[2vh]">
+          handphone:max-tablet:px-wFormProfile handphone:max-tablet:py-hFormProfile">
           <form className="grow">
               <label>Store Description</label>
               <br></br>
@@ -67,8 +69,11 @@ class ProfileCust extends Component {
             </div>
             </div>
         </section>
-        <section className="px-[150px] pb-[100px] flex justify-center">
-          <button className="flex bg-[#D94141] px-[50px] py-[15px] rounded-md gap-2 text-white"><img src={Logout} alt="" /> LOGOUT</button>
+        <section className="px-[150px] pb-[100px] 
+        handphone:max-tablet:flex handphone:max-tablet:justify-center">
+          <button className="flex bg-[#D94141] px-[50px] py-[15px] rounded-md gap-2 text-white
+        handphone:max-tablet:px-[10px] handphone:max-tablet:py-[5px]"><img src={Logout} alt="" className="
+        handphone:max-tablet:w-image1.5"/> LOGOUT</button>
         </section>
       </>
     )
