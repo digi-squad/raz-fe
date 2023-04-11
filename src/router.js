@@ -16,7 +16,7 @@ import BlogDetail from "./pages/BlogDetail";
 import OrderTrack from "./pages/Order Track";
 import Blog from "./pages/Blog";
 //angga
-import Footer from './component/footer';
+import Footer from './components/Footer/footer';
 import AboutUs from './pages/aboutus';
 import PreLaunching from "./pages/comingsoon";
 import ProfileCust from './pages/profileCust';
@@ -74,10 +74,6 @@ const router = createBrowserRouter([
     errorElement: <Error />,
   },
   //angga
-  {
-    path: "/footer",
-    element: <Footer />,
-  },
   {
     path: "/aboutus",
     element: <AboutUs />,
