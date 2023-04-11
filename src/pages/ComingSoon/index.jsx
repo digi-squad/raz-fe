@@ -1,5 +1,5 @@
 import React from "react";
-import CountdownTimer from "../component/CountdownTimer";
+import CountdownTimer from "../../component/CountdownTimer";
 import '../css/ComingSoon.css';
 import fb from '../assets/footer/facebook-f.svg';
 import twit from '../assets/footer/twitter.svg';
