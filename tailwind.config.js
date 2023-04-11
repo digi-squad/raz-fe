@@ -10,6 +10,7 @@ module.exports = {
     },
     fontWeight: {
       titleWeight: '500',
+      700 : '700',
 
     },
     extend: {
