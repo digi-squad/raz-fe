@@ -16,11 +16,10 @@ import BlogDetail from "./pages/BlogDetail";
 import OrderTrack from "./pages/Order Track";
 import Blog from "./pages/Blog";
 //angga
-import Footer from './components/Footer/footer';
-import AboutUs from './pages/aboutus';
-import PreLaunching from "./pages/comingsoon";
-import ProfileCust from './pages/profileCust';
-import ProfileSeller from './pages/profileSeller';
+import AboutUs from './pages/AboutUs';
+import PreLaunching from "./pages/ComingSoon";
+import ProfileCust from './pages/Profile';
+import ProfileSeller from './pages/Profile/Seller';
 
 const router = createBrowserRouter([
   { path: "/faq", element: <Faq /> },
