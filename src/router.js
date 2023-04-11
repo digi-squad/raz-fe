@@ -14,7 +14,13 @@ import Cart from "./pages/Cart/";
 import Checkout from "./pages/Checkout/";
 import BlogDetail from "./pages/BlogDetail";
 import OrderTrack from "./pages/Order Track";
-import Blog from "./pages/Blog"
+import Blog from "./pages/Blog";
+//angga
+import Footer from './component/footer';
+import AboutUs from './pages/aboutus';
+import PreLaunching from "./pages/comingsoon";
+import ProfileCust from './pages/profileCust';
+import ProfileSeller from './pages/profileSeller';
 
 const router = createBrowserRouter([
   { path: "/faq", element: <Faq /> },
@@ -36,9 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/product/:id", element:
       <PrivateRoute>
-        <ProductDetail /> 
-      </PrivateRoute>},
-	{ path: "/blog", element: <Blog /> },
+        <ProductDetail />
+      </PrivateRoute>
+  },
+  { path: "/blog", element: <Blog /> },
   { path: "/blogdetail", element: <BlogDetail /> },
   {
     path: "/mycart", element: (
@@ -65,6 +72,27 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
     errorElement: <Error />,
+  },
+  //angga
+  {
+    path: "/footer",
+    element: <Footer />,
+  },
+  {
+    path: "/aboutus",
+    element: <AboutUs />,
+  },
+  {
+    path: "/soon",
+    element: <PreLaunching />,
+  },
+  {
+    path: "/profilecust",
+    element: <ProfileCust />,
+  },
+  {
+    path: "/profileseller",
+    element: <ProfileSeller />,
   },
 ]);
 
